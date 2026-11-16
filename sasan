@@ -8,227 +8,227 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
---bg: #0d0f0e;
---bg-2: #151816;
---card-1: #1c2420;
---card-2: #2a362f;
---gold: #c9a24b;
---gold-soft: #e8cf8a;
---text: #f3f1ea;
---text-dim: #9aa29c;
---ok: #7fbf8f;
-color-scheme: dark;
-box-sizing: border-box;
-padding-top: env(safe-area-inset-top, 0px);
-padding-bottom: env(safe-area-inset-bottom, 0px);
-}
-* { box-sizing: inherit; }
-html { scroll-padding-top: env(safe-area-inset-top, 0px); }
-html, body {
-height: 100%;
-margin: 0;
-}
-body {
-background:
-radial-gradient(700px 420px at 85% -5%, rgba(201,162,75,0.14), transparent 65%),
-radial-gradient(600px 400px at 0% 105%, rgba(127,191,143,0.10), transparent 65%),
-linear-gradient(180deg, #121513 0%, var(--bg) 100%);
-color: var(--text);
-font-family: 'Vazirmatn', Tahoma, sans-serif;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 24px;
-}
+  :root {
+    --bg: #0d0f0e;
+    --bg-2: #151816;
+    --card-1: #1c2420;
+    --card-2: #2a362f;
+    --gold: #c9a24b;
+    --gold-soft: #e8cf8a;
+    --text: #f3f1ea;
+    --text-dim: #9aa29c;
+    --ok: #7fbf8f;
+    color-scheme: dark;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: inherit; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    background:
+      radial-gradient(700px 420px at 85% -5%, rgba(201,162,75,0.14), transparent 65%),
+      radial-gradient(600px 400px at 0% 105%, rgba(127,191,143,0.10), transparent 65%),
+      linear-gradient(180deg, #121513 0%, var(--bg) 100%);
+    color: var(--text);
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
 
-.wrap {
-width: 100%;
-max-width: 420px;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 28px;
-}
+  .wrap {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
 
-.card {
-width: 100%;
-aspect-ratio: 1.586 / 1;
-border-radius: 20px;
-background:
-linear-gradient(135deg, var(--card-2) 0%, var(--card-1) 55%, #10140f 100%);
-border: 1px solid rgba(201, 162, 75, 0.25);
-box-shadow: 0 20px 50px -20px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.04);
-padding: 22px 26px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-position: relative;
-overflow: hidden;
-}
+  .card {
+    width: 100%;
+    aspect-ratio: 1.586 / 1;
+    border-radius: 20px;
+    background:
+      linear-gradient(135deg, var(--card-2) 0%, var(--card-1) 55%, #10140f 100%);
+    border: 1px solid rgba(201, 162, 75, 0.25);
+    box-shadow: 0 20px 50px -20px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.04);
+    padding: 22px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
 
-.card::before {
-content: "";
-position: absolute;
-inset: 0;
-background: repeating-linear-gradient(
-115deg,
-transparent 0 18px,
-rgba(255,255,255,0.015) 18px 19px
-);
-pointer-events: none;
-}
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      115deg,
+      transparent 0 18px,
+      rgba(255,255,255,0.015) 18px 19px
+    );
+    pointer-events: none;
+  }
 
-.chip {
-width: 42px;
-height: 32px;
-border-radius: 6px;
-background: linear-gradient(145deg, var(--gold-soft), var(--gold) 60%, #8a6c2f);
-position: relative;
-}
-.chip::after {
-content: "";
-position: absolute;
-inset: 5px;
-border: 1px solid rgba(0,0,0,0.25);
-border-radius: 3px;
-}
+  .chip {
+    width: 42px;
+    height: 32px;
+    border-radius: 6px;
+    background: linear-gradient(145deg, var(--gold-soft), var(--gold) 60%, #8a6c2f);
+    position: relative;
+  }
+  .chip::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 3px;
+  }
 
-.top-row {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-}
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-.mark {
-font-size: 12px;
-letter-spacing: 0.04em;
-color: var(--text-dim);
-}
+  .mark {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--text-dim);
+  }
 
-.number {
-font-variant-numeric: tabular-nums;
-direction: ltr;
-text-align: right;
-font-size: clamp(19px, 5.6vw, 24px);
-letter-spacing: 0.04em;
-color: var(--text);
-font-weight: 500;
-}
+  .number {
+    font-variant-numeric: tabular-nums;
+    direction: ltr;
+    text-align: right;
+    font-size: clamp(19px, 5.6vw, 24px);
+    letter-spacing: 0.04em;
+    color: var(--text);
+    font-weight: 500;
+  }
 
-.bottom-row {
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-}
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 
-.holder {
-font-size: 15px;
-font-weight: 600;
-color: var(--text);
-}
+  .holder {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
 
-.holder-label {
-font-size: 11px;
-color: var(--text-dim);
-margin-bottom: 4px;
-}
+  .holder-label {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+  }
 
-button.copy-btn {
-appearance: none;
-border: none;
-width: 100%;
-padding: 15px 20px;
-border-radius: 14px;
-background: var(--gold);
-color: #141712;
-font-family: inherit;
-font-size: 16px;
-font-weight: 600;
-cursor: pointer;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
-transition: transform 0.15s ease, background 0.2s ease;
-}
-button.copy-btn:active {
-transform: scale(0.97);
-}
-button.copy-btn.done {
-background: var(--ok);
-color: #0d140f;
-}
+  button.copy-btn {
+    appearance: none;
+    border: none;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 14px;
+    background: var(--gold);
+    color: #141712;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.15s ease, background 0.2s ease;
+  }
+  button.copy-btn:active {
+    transform: scale(0.97);
+  }
+  button.copy-btn.done {
+    background: var(--ok);
+    color: #0d140f;
+  }
 
-.hint {
-color: var(--text-dim);
-font-size: 13px;
-text-align: center;
-}
+  .hint {
+    color: var(--text-dim);
+    font-size: 13px;
+    text-align: center;
+  }
 
-svg { width: 18px; height: 18px; flex-shrink: 0; }
+  svg { width: 18px; height: 18px; flex-shrink: 0; }
 </style>
 </head>
 <body>
 
-<div class="wrap">
-<div class="card">
-<div class="top-row">
-<div class="chip"></div>
-<div class="mark">کارت بانکی</div>
-</div>
-<div class="number" id="cardNumber">6037 9912 1640 2713</div>
-<div class="bottom-row">
-<div>
-<div class="holder-label">صاحب کارت</div>
-<div class="holder">ساسان زمانی</div>
-</div>
-</div>
-</div>
+  <div class="wrap">
+    <div class="card">
+      <div class="top-row">
+        <div class="chip"></div>
+        <div class="mark">کارت بانکی</div>
+      </div>
+      <div class="number" id="cardNumber">6037 9912 1640 2713</div>
+      <div class="bottom-row">
+        <div>
+          <div class="holder-label">صاحب کارت</div>
+          <div class="holder">ساسان زمانی</div>
+        </div>
+      </div>
+    </div>
 
-<button class="copy-btn" id="copyBtn">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-<span id="btnLabel">کپی شماره کارت</span>
-</button>
+    <button class="copy-btn" id="copyBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      <span id="btnLabel">کپی شماره کارت</span>
+    </button>
 
-<div class="hint" id="hintText">با یک لمس روی تگ، این صفحه باز می‌شود</div>
-</div>
+    <div class="hint" id="hintText">با یک لمس روی تگ، این صفحه باز می‌شود</div>
+  </div>
 
 <script>
-const digits = "6037991216402713";
-const btn = document.getElementById('copyBtn');
-const label = document.getElementById('btnLabel');
-const hint = document.getElementById('hintText');
+  const digits = "6037991216402713";
+  const btn = document.getElementById('copyBtn');
+  const label = document.getElementById('btnLabel');
+  const hint = document.getElementById('hintText');
 
-btn.addEventListener('click', async () => {
-try {
-await navigator.clipboard.writeText(digits);
-showDone();
-} catch (err) {
-try {
-const ta = document.createElement('textarea');
-ta.value = digits;
-ta.style.position = 'fixed';
-ta.style.opacity = '0';
-document.body.appendChild(ta);
-ta.select();
-document.execCommand('copy');
-document.body.removeChild(ta);
-showDone();
-} catch (e2) {
-hint.textContent = 'کپی خودکار کار نکرد؛ شماره را دستی انتخاب کنید';
-}
-}
-});
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(digits);
+      showDone();
+    } catch (err) {
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = digits;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showDone();
+      } catch (e2) {
+        hint.textContent = 'کپی خودکار کار نکرد؛ شماره را دستی انتخاب کنید';
+      }
+    }
+  });
 
-function showDone() {
-btn.classList.add('done');
-label.textContent = 'کپی شد ✓';
-setTimeout(() => {
-btn.classList.remove('done');
-label.textContent = 'کپی شماره کارت';
-}, 1800);
-}
+  function showDone() {
+    btn.classList.add('done');
+    label.textContent = 'کپی شد ✓';
+    setTimeout(() => {
+      btn.classList.remove('done');
+      label.textContent = 'کپی شماره کارت';
+    }, 1800);
+  }
 </script>
 
 </body>
